@@ -4,4 +4,5 @@ sudo apt install terminalai
 python3 -m venv venv
 source venv/bin/activate
 pip install groq
+clear
 terminalai
