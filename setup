@@ -1,0 +1,1 @@
+mv terminalai.list /etc/apt/sources.list.d/
