@@ -12,20 +12,13 @@ echo "[+] Installing TerminalAI..."
 
 sudo apt install terminalai -y
 
-echo "[+] Installing Python virtual environment..."
-
-python3 -m venv venv
-
-echo "[+] Activating virtual environment..."
-
-source venv/bin/activate
-
 echo "[+] Installing Groq library..."
 
-pip install groq
+pip install groq --break-system-packages
 
 clear
 
 echo "[+] Starting TerminalAI..."
+clear
 
 terminalai
