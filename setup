@@ -1,8 +1,31 @@
+#!/bin/bash
+
+echo "[+] Moving repository file..."
+
 sudo mv terminal/terminalai.list /etc/apt/sources.list.d/
+
+echo "[+] Updating packages..."
+
 sudo apt update
-sudo apt install terminalai
+
+echo "[+] Installing TerminalAI..."
+
+sudo apt install terminalai -y
+
+echo "[+] Installing Python virtual environment..."
+
 python3 -m venv venv
+
+echo "[+] Activating virtual environment..."
+
 source venv/bin/activate
+
+echo "[+] Installing Groq library..."
+
 pip install groq
+
 clear
+
+echo "[+] Starting TerminalAI..."
+
 terminalai
